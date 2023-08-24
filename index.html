@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAANO.in</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+
+        header {
+            background-color: #3f51b5;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 2400px; /* Total width of all pages */
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow-x: scroll; /* Enable horizontal scrolling */
+        }
+
+        .page {
+            flex: 1;
+            min-width: 800px; /* Minimum width of each page */
+            padding: 20px;
+        }
+
+        .background-image {
+            background-image: url('your-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .background-buttons {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3f51b5;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .footer-logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .footer-info {
+            text-align: left;
+        }
+
+        .footer-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Style for normal button state */
+        button {
+            background-color: #3f51b5;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Adding transition effect */
+        }
+
+        /* Style for button on hover */
+        button:hover {
+            background-color: #1a237e;
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                overflow-x: hidden;
+            }
+            
+            .page {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="JAANO.in" class="logo">
+        <div class="header-buttons">
+            <button onclick="window.open('https://example.com', '_blank')">Button 1</button>
+            <button onclick="window.open('https://example.com', '_blank')">Button 2</button>
+            <button onclick="window.open('https://example.com', '_blank')">Button 3</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page background-image">
+            <div class="background-buttons">
+                <button onclick="window.open('https://example.com', '_blank')">Log-in</button>
+                <button onclick="window.open('https://example.com', '_blank')">Register</button>
+            </div>
+        </div>
+        <div class="page">
+            <h1>Page 2</h1>
+            <p>This is the content of Page 2.</p>
+        </div>
+        <div class="page">
+            <h1>Page 3</h1>
+            <p>This is the content of Page 3.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <img src="footer-logo.png" alt="JAANO.in" class="footer-logo">
+            <p>NIT Silchar, India<br>hradaysadrani@gmail.com</p>
+        </div>
+        <div class="footer-buttons">
+            <button onclick="window.open('https://google.com', '_blank')">Home</button>
+            <button onclick="window.open('https://wikipedia.com', '_blank')">About Us</button>
+            <button onclick="window.open('https://youtube.com', '_blank')">Contact Us</button>
+        </div>
+    </footer>
+</body>
+</html>
